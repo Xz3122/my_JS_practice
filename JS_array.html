@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">  
+    <title></title>  
+    </head>   
+    <body>
+        <script>
+            let grades=[];//建立一格陣列
+            grades.push(100);//逐一加入數字
+            grades.push(60);
+            grades.push(100);
+            grades.push(90);
+            console.log("陣列長度:"+grades.length);//陣列長度
+            console.log("列印出陣列的元素:"+grades);//列印出陣列的元素
+            console.log("列印出陣列第3的元素:"+grades[3]);//列印出陣列第3的元素[0,1,2,3]
+
+            let sum = 0;
+            for(let i=0;i<grades.length;i++){
+                console.log(grades[i])                 //迴圈逐一列印出陣列元素
+                sum += grades[i];
+            };
+            console.log("陣列內的數字相加:"+sum);
+        </script>    
+    </body>     
+</html>    
