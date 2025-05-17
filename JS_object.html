@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">  
+    <title></title>  
+    </head>   
+    <body>
+        <script>
+                let man = new Object();//建立物件
+                man.age = 30;          //屬性
+                man.sex = "man";       //屬性
+                man.name = "Tom";      //屬性 
+                man.msg = function(){  //方法
+                    console.log("Hello,my name is",this.name,"I am",this.age,"years old,I am a ",this.sex)
+                };
+                console.log(man);//列印物件所有內容
+                console.log(man.age>25);//判斷
+                man.msg()//列印出物件內方法的內容
+        </script>    
+    </body>     
+</html>    
