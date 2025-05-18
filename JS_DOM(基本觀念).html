@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--width=device-width:寬度=螢幕裝置寬度-->
+                                                                           <!--initial-scale=1.0:網頁載入不放大及縮小-->
+    <meta charset="utf-8"/>  
+    <title>HTML DOM</title>  
+    </head>   
+    <body>
+        <script>
+            console.log(window);//印出Window的物件內容
+            console.log(window.innerWidth,window.innerHeight);//取得Window的寬度/高度
+            console.log(window.screen.width,window.screen.height);//取得物件內的物件
+            console.log(window.location.href);//網址列上的網址
+            /*window.location.href="https://github.com/"*/  //將網址列的網址替換掉(跳轉網頁)
+             console.log(window.document);//winow底下的document物件
+             console.dir(window.document);//詳細版
+             console.dir(document.title);//doucument內的title標籤
+             document.title = "Js DOM 練習";//替換title標籤
+             console.log(document.body.innerHTML);//<body></body>中的內文
+             document.body.innerHTML = "Hello";//利用Js修改網頁而非在HTML內做修改
+        </script>    
+    </body>     
+</html>    
