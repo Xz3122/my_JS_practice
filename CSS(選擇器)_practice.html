@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">  
+    <title>CSS  選擇器</title> 
+        <style>
+            /*ID 選擇器*/
+            #title-1{text-decoration:line-through;/*文字裝飾線:刪除線*/
+                     color: black;
+            }
+            /*標籤選擇器*/
+            body{background-color:beige;}
+            /*class 選擇器*/
+            .title{margin-bottom:20px;
+                   font-weight: bold;
+                   font-size: 25px;
+                   color:rgb(213, 131, 9)
+            }
+            .content{width:50%;
+                    border:2px dashed rgb(24, 237, 63);
+                    color:black
+            }
+            .key{width:50%;
+                 background-color:black;
+                 color:brown
+            }
+        </style>    
+    </head>   
+    <body><!--標籤選擇器套用位置-->
+        <div id = "title-1" class = "title">段落標題</div><!--刪除{sytle=" "}利用class及id呼叫選擇器內的樣式-->
+        <div class ="content">
+            這是<span class = "key">關鍵字</span> 
+            <div style="width:50%;background-color:black;color:brown">測試</div>
+            下一行<br/>下一行<br/>下一行<br/>
+        </div>      
+    </body>           
+</html>    
