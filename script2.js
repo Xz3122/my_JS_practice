@@ -9,5 +9,5 @@ ob[2] = "beach"//[apple,beach,undefine,elephant]
 console.log(ob)
 ob.push = "fork"//[apple,beach,undefine,elephant,fork]
 console.log(ob)
-ob[0]=[]//array(0),beach,undefine,elephant,fork]
+ob[0]=[]//[array(0),beach,undefine,elephant,fork]
 console.log(ob)
