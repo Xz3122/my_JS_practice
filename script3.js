@@ -24,4 +24,10 @@ call3(function(back){ //匿名函式(自創函式)，在call3( )內加入自創�
 (function(msg){//匿名函式+IIFE立即函式(用來保護內部變數即屬即參數不去影響或受影響)
     let str  = "I am fine thank you," + msg;
     console.log(str);
-})("and you?");//簡化，原本為said("and you?")
+})("and you?");
+/*⬇⬇⬇⬇⬇⬇原本寫法⬇⬇⬇⬇⬇⬇*/
+ function said(msg){
+    let str  =  "I am fine thank you," + msg 
+    console.log(str) 
+ }
+ said("and you?")
