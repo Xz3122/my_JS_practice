@@ -36,4 +36,4 @@ console.log(jsonobj)
 
 /*將JS物件轉換成Json格式*/ 
 let jsstr = JSON.stringify(man);
-console.log(jsstr)//因為Json檔不能儲存函式，所以不會顯示JS方法
+console.log(jsstr)//因為Json檔不能儲存函式，所以不會顯示JS函式
