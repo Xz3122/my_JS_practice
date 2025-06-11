@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="font-size: 100px;color:brown;">Read Json</div>
+    <button onclick = "getdata()"style="color: blue;">讀取Json檔</button>
+    <div id="result"></div>
+    <script>
+        function getdata(){
+            fetch('./data2.json').then(function(res){
+                return res.json();
+            }).then(function(data){
+                console.log(data);
+                let result = document.querySelector("#result")
+                for(let i=0;i<data.length;i++){
+                   let book = data[i];3
+                   console.log(book)
+                }
+            })
+        }
+    </script>
+</body>
+</html>

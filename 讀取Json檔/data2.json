@@ -1,0 +1,26 @@
+[ 
+  {
+     "title": "格林童話",
+     "author": "雅各布·格林與威廉·格林",
+     "year": 1812,
+     "genre": "story",
+     "read": false,
+     "rating": {
+         "趣味": true,
+         "恐怖": false,
+         "溫馨": true
+     }
+  },
+  {
+     "title": "安徒生童話",
+     "author": "斯·克里斯蒂安·安徒生",
+     "year": "19世紀",
+     "genre": "story",
+     "read": true,
+     "rating": {
+         "趣味": true,
+         "恐怖": false,
+         "溫馨": true
+     }
+  }
+] 

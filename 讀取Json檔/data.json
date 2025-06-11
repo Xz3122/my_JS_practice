@@ -1,0 +1,10 @@
+{
+    "name":"Marry",
+    "age":"23",
+    "sex":"girl",
+    "personal":{
+        "interest":["badminton,game,programming"],
+        "family":["mom,dad,brother"],
+        "pet":"dog"
+    }
+}
