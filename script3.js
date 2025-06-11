@@ -2,6 +2,10 @@ let call = function(){
     console.log("Hello")
 }
 call();
+/*⬇⬇⬇⬇⬇⬇箭頭函式寫法⬇⬇⬇⬇⬇⬇*/
+let call = ()=>{
+    console.log("Hello")
+}
 // -------------------------------
 //call1()             //此種呼叫位置可以用在此函式但會產生暫時性死區(TDZ)影響其他函式
 function call1(){
@@ -13,6 +17,11 @@ function call2(back){ //回呼函式
    back("are");
 }
 call2(console.log);//call2()內可用函式當參數
+/*⬇⬇⬇⬇⬇⬇箭頭函式寫法⬇⬇⬇⬇⬇⬇*/
+let call2 = (back)=>{
+    back("are");
+} 
+call2(console.log);
 // -----------------------------
 function call3(back){ //回呼函式
    back("?"); 
@@ -31,3 +40,30 @@ call3(function(back){ //匿名函式(自創函式)，在call3( )內加入自創�
     console.log(str) 
  }
  said("and you?")
+//------------------------------------------ 
+let add = function(a,b){
+    let result = a + b
+    return result
+}
+/*⬇⬇⬇⬇⬇⬇箭頭函式寫法⬇⬇⬇⬇⬇⬇*/
+let add =(a,b)=>{
+    let result = a + b
+    return result
+} 
+//*箭頭函式簡化條件:函式內部只有一個return回傳值，沒有其他運算等程式碼才能做簡化
+//ex:
+let sub = function(a,b){
+    let result = a - b;
+    return result
+}
+/*⬇⬇⬇箭頭函式⬇⬇⬇*/
+let sub = (a,b)=>{////中間有let result = a - b所以不可被簡化
+    let result = a - b;
+    return result
+}
+
+let sub = function(a,b){;
+    return a - b
+}
+/*⬇⬇⬇可以被簡化⬇⬇⬇*/
+let sub = (a,b)=>(a-b)
