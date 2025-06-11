@@ -11,14 +11,15 @@
     <div id="result"></div>
     <script>
         function getdata(){
-            fetch('./data2.json').then(function(res){
+            fetch('./data2.json').then(function(res){//AJAX fetch
                 return res.json();
             }).then(function(data){
-                console.log(data);
-                let result = document.querySelector("#result")
+                console.log(data);//只會顯示在console端不會顯示在畫面上
+                let result = document.querySelector("#result")//取得名為result的id
+                result.innerHTML = '';//點擊1次先清空再呈現資料，innerHTML:將程式處理過後的結果呈現在網頁上
                 for(let i=0;i<data.length;i++){
-                   let book = data[i];3
-                   console.log(book)
+                   let book = data[i];
+                   result.innerHTML+="<div>"+book.title+","+book.author+","+book.year+","+book.genre+","+book.read+","+book.rating.趣味+","+book.rating.恐怖+","+book.rating.溫馨+"</div>"
                 }
             })
         }
